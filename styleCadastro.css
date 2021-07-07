@@ -1,0 +1,164 @@
+:root {
+    --bg:#171717;
+    --bg-second:#374045;
+    --red:#da0017;
+    --orange:#d89216;
+    --gelo:#dddddd;
+}
+
+@font-face {
+	font-family: HATTEN;
+	src: url(assets/HATTEN.TTF)
+}
+
+header {
+    background:var(--bg);
+    padding: 20px 0;
+  }
+  .inf, .form{
+      background-color: var(--bg-second);
+  }
+  .container {
+    margin: 0 auto;
+  }
+  .inf{
+      text-align: center;
+      padding: 15px;
+  }
+  nav {
+    top: 118px;
+    right: 0;
+  }
+  
+  nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+  }
+  
+  nav a {
+    text-transform: uppercase;
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none
+  }
+  
+  nav a:hover {
+    color:grey;
+    text-decoration: underline;
+  }
+
+header img{
+    width: 100px;
+    height: 100px;
+}
+
+#titulo {
+    font-family: HATTEN;
+    color: var(--orange);
+ 
+} 
+
+#subtitulo {
+    font-family: HATTEN;
+    color: var(--orange);
+} 
+
+body{
+    background-color: #dddddd;
+    width: 70%;
+    margin: 0 15%;
+}
+
+.botao {
+    font-family: sans-serif;
+    font-size: 1em;
+    color: var(--orange);
+    border-radius: 8px;
+}
+.botao :hover{
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.grupo:before, .grupo:after {
+    display: table;
+}
+
+.grupo:after {
+    clear: both;
+}
+
+.campo {
+    margin: 0 40% 0;
+
+}
+
+.campo1 {
+    background-color: var(--bg-second);
+    text-align: center;
+
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    color: var(--gelo);
+    display: block;
+
+}
+
+.campo input[type="text"], .campo input[type="email"] {
+    padding: 0.2em;
+    border: 0 0 1px 0 solid var(--gelo);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+ 
+
+}
+
+.campo input:focus{
+    background: #E0E0F8;
+}
+
+.botao {
+    font-size: 1.2em;
+    background: var(--orange);
+    border: 0;
+    color: var(--gelo);
+    padding: 0.2em 0.6em;
+    margin: 20px;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 50%);
+
+}
+
+
+footer { 
+    margin: 0 auto;
+    text-align: center;
+    background: #171717;
+    padding: 40px 0;
+   
+  }
+
+footer img{
+    width: 100px;
+    height: 100px;
+}
+  
+  .copyright {
+    color: #dddddd;
+    font-size: 13px;
+    margin-top: 20px;
+  } 
+
+ /* Parte responsiva  */ 
+  @media screen and (max-width: 480px) {
+
+body{
+    width: 100%;
+    margin: 0;
+}
+
+.form{
+    float: left;
+}
+  }

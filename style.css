@@ -1,0 +1,282 @@
+:root {
+    --bg:#171717;
+    --bg-second:#374045;
+    --red:#da0017;
+    --orange:#d89216;
+    --gelo:#dddddd;
+}
+
+@font-face {
+	font-family: HATTEN;
+	src: url(assets/HATTEN.TTF)
+}
+.botaoCriarConta{
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    margin: 50px;
+    
+}
+.botaoCriarConta a{
+  text-decoration: none;
+  color: white;
+}
+.button1 {
+    background-color: var(--red); 
+    border: none;
+    color: white;
+    font-family: HATTEN;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    
+    
+}
+
+.button:hover {
+    opacity: 0.3;
+  }
+/*body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}*/
+
+.titulo{
+    text-align: center;
+    font-size: 2.5em;
+    color:var(--orange);
+    font-family: 'HATTEN', sans-serif;
+}
+
+p{
+    color: var(--gelo);
+    text-align: center;
+}
+
+h3{
+    color:var(--gelo);
+}
+
+.slider {
+    height: 459px;
+    width: 940px;
+    margin: 0 auto;
+    position:relative;
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+}
+
+.slider input {
+    display: none;
+}
+
+.slider label {
+    background-color: #dddddd;
+    bottom: 12px;
+    cursor: pointer;
+    display: block;
+    height: 12px;
+    position: absolute;
+    width: 12px;
+    z-index: 12;
+    border-radius: 12px;
+}
+
+.slider li:nth-child(1) label {
+    left: 450px;
+}
+
+.slider li:nth-child(2) label {
+    left: 484px;
+}
+
+.slider li:nth-child(3) label {
+    left: 518px;
+}
+
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 5;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+  }
+  
+  .about {
+    padding: 3em 0;
+    background: #171717;
+    width: 940px;
+    margin: 0 auto;
+  
+  }
+  
+  .about p {
+    margin: 0 0 1em;
+  }
+  
+  .about strong {
+    font-weight: bold;
+  }
+  
+  .zoetrope {
+    width: 180px;
+    float: left;
+    float: top;
+    margin: 0 20px 20px 20px;
+  } 
+  
+  .vantagens {
+    padding: 3em 0;
+    background: linear-gradient(#171717, #374045);
+    width: 940px;
+    margin: 0 auto;
+  }
+  
+  .vantagens-app {
+    width: 550px;
+    margin: 0 auto;
+    padding: 12px 0 0;
+  }
+  
+  .vantagens p {
+    text-align: center;
+  }
+
+.vantagem-lista {
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+    list-style-image: url("assets/filmeITEM.png");
+
+  }
+  
+.itens {
+    line-height: 1.5;
+  }
+  
+.imagem-vantagem {
+    width: 40%;
+    opacity: 1;
+    transition: 400ms;
+  }
+  
+.imagem-vantagem:hover {
+    opacity: 0.3;
+  }
+
+.galery{
+    width:940px;
+    padding: 3em 0;
+    height: 600px;
+    margin: 0 auto;
+    background-color:var(--bg-second);
+    overflow: hidden;
+}
+.galery .foto-app{
+    width: 400%;
+    padding: 20px 30px;
+    animation-name: animacao;
+    animation-duration:15s;
+    animation-iteration-count: infinite;
+    display: flex;
+    justify-content: space-around;
+}
+
+.galery .foto-app .slide-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.galery .foto-app .slide-item img {
+    width: 24,9% ;
+    padding: 0 12px;
+    height: 400px;
+}
+    
+    @keyframes animacao{
+    0% { margin-left:0;}
+    20% { margin-left:0;}
+    25% { margin-left:-100%;}
+    45% { margin-left:-100%;}
+    50% { margin-left:-200%;}
+    70% { margin-left:-200%;}
+    75% { margin-left:-300;}
+    95% { margin-left:-300%;}
+    100% { margin: left -400%;}
+    }
+  
+footer { 
+    margin: 0 auto;
+    text-align: center;
+    background: #171717;
+    padding: 40px 0;
+    width: 940px;
+  }
+
+footer img{
+    width: 100px;
+    height: 100px;
+}
+  
+  .copyright {
+    color: #dddddd;
+    font-size: 13px;
+    margin-top: 20px;
+  } 
+/* Parte responsiva  */
+  @media screen and (max-width: 480px) {
+p{
+  font-size: 50px;
+}
+.titulo{
+  font-size: 70px;
+}
+.about{
+  text-align: center;
+}
+
+.zoetrope{
+    float: none;
+}
+
+.itens {
+  font-size: 40px;
+}
+.vantagem-lista {
+  width: 100%;
+}
+
+.imagem-vantagem{
+  width: 100%;
+}
+
+.galery{
+  height: 100%;
+}
+}
